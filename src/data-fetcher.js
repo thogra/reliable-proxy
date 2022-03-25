@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-export const baseUrl = process.env.BASE_URL || 'http://www.rodong.rep.kp';
+export const baseUrl = process.env.BASE_URL;
 
 export async function fetchText(path) {
   const response = await fetch(`${baseUrl}/${path}`);
